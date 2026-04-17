@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Мой блог</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav ul');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
 <body>
 <header>
     <h1>Мой блог</h1>
+
+    <button class="burger"> </button>
+
     <nav aria-label="Основная навигация">
         <ul>
             <li><a href="index.html">Главная</a></li>
@@ -21,7 +35,7 @@
         <p>"Это мой блог</p>
     </section>
 
-    <section>
+    <section class="articles">
         <h2>Последние статьи</h2>
 
         <article>
